@@ -6,10 +6,12 @@ import Profil from "../pages/Profil";
 import Dashboard from "../pages/Dashboard";
 import Signin from "../pages/Signin";
 import Error from "../pages/Error";
+import AuthManager from "../components/shared/AuthManager";
 
 function App() {
   return (
     <>
+      <AuthManager />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
