@@ -1,0 +1,35 @@
+.main__home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.article-sorter {
+  display: flex;
+  justify-content: center;
+  margin: 3vh 0;
+  width: 90%;
+}
+.article-sort__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1em;
+  width: 25%;
+  height: 3vh;
+  padding: 1rem 0;
+  background-color: #ff6060;
+  border: none;
+  border-radius: 10px;
+}
+
+.container__forum-articles {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: calc(100vh - 32px - 70px);
+  border-radius: 20px;
+  background-color: #cfced1;
+}

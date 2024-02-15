@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  height: 7vh;
+}
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+}
+.navbar__menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 100%;
+
+  &:hover {
+    cursor: pointer;
+    background-color: lighten($color: #ff6060, $amount: 20);
+  }
+}
