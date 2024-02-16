@@ -6,19 +6,19 @@ import Profil from "../pages/Profil";
 import Dashboard from "../pages/Dashboard";
 import Signin from "../pages/Signin";
 import Error from "../pages/Error";
-import AuthManager from "../components/shared/AuthManager";
+import Post from "../pages/Post";
 
 function App() {
   return (
     <>
-      <AuthManager />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/post/:id" element={<Post />} />
         <Route path="/profil" element={<Profil />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/signin" element={<Signin />} />
+        <Route path="/register" element={<Signin />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </>

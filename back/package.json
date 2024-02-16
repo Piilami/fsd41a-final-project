@@ -4,7 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    
+   
+    "swagger": "node ./swagger.js"
+  
   },
   "author": "",
   "type": "module",
@@ -20,6 +24,7 @@
     "mongoose": "^8.1.2"
   },
   "devDependencies": {
-    "nodemon": "^3.0.3"
+    "nodemon": "^3.0.3",
+    "swagger-autogen": "^2.23.7"
   }
 }

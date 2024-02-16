@@ -1,8 +1,46 @@
+.forum-post-link {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin-top: 2vh;
+
+  padding: 1rem;
+  border-radius: 20px;
+  height: 50vh;
+}
 .forum-post {
+  display: flex;
+  flex-direction: column;
   width: 90%;
   margin-top: 2vh;
   padding: 1rem;
   border-radius: 20px;
-  height: fit-content;
+  height: 100%;
   background-color: #ff6060;
+}
+
+.article-title {
+  display: flex;
+  justify-content: center;
+  height: 30%;
+}
+
+.container__post {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  height: 70%;
+}
+
+.container__content {
+  width: 100%;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.icone-vote {
+  width: 100%;
+  height: 20%;
+  &:hover {
+    cursor: pointer;
+  }
 }

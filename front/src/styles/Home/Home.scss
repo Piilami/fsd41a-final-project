@@ -28,8 +28,10 @@
 .container__forum-articles {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 90%;
-  height: calc(100vh - 32px - 70px);
+
   border-radius: 20px;
   background-color: #cfced1;
 }

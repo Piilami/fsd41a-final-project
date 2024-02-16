@@ -20,16 +20,10 @@ mongoose
   .catch((err) => {
     console.log("Connexion à la base de donnée échoué" + err);
   });
-
-app.use(express.json());
 app.use(cookieParser());
+app.use(express.json());
 
-app.use(
-  cors({
-    origin: "*",
-    credentials: true,
-  })
-);
+app.use(cors({ origin: true, credentials: true }));
 
 app.use(router);
 

@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const commentSchema = mongoose.Schema({
   userId: { type: String, required: true },
-  username: { type: String, required: true },
+  username: { type: String },
   content: { type: String, required: true },
 });
 
@@ -12,7 +12,7 @@ const postSchema = mongoose.Schema({
   content: { type: String },
   pictures: { type: Array },
   video: { type: Array },
-  author: { type: Object, required: true },
+  author: { type: Object },
   date: { type: Date, required: true },
   votes: {
     upvote: { type: Array, required: true },
